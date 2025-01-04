@@ -5,8 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors</title>
     <script src="index.js"></script>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  
+    <div class="game">
+        <h1>Let's Play Rock, Paper, Scissors</h1>
+        <p>Press the button to play a round.</p>
+        <button onclick="playRound()">Rock, Paper, Scissors</button>
+        <p id="result"></p>
+    </div>
+    
+    <div class="scoreboard">
+        <div class="human">
+            <h2>Human Score</h2>
+            <p class="score" id="humanScore">0</p>
+        </div>
+        <div class="computer">
+            <h2>Computer Score</h2>
+            <p class="score" id="computerScore">0</p>
+        </div>
+    </div>
+
+    <div class="game">
+        <button onclick="startOver()">Start Over</button>
+    </div>
+    
 </body>
 </html>
